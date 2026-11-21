@@ -22,6 +22,6 @@ xcodebuild -project FFFModelFixer.xcodeproj -scheme FFFModelFixer -configuration
 
 - Needs `exiftool` installed (`brew install exiftool`). App Sandbox is off on purpose (entitlements), so it can run it and write into dropped folders.
 - It rewrites the originals in place (`-overwrite_original`); the backup copy is the only undo. Each `.fff` can be 100–200 MB, so a backup doubles the session's size.
-- Local builds are named "FFFModelFixer (Debug)" / "FFFModelFixer (Test)"; archives keep the plain name (`APP_NAME_KIND` from `DEPLOYMENT_LOCATION` in the project). The commit mentions a release script; none is in this repo.
+- Local builds are named "FFFModelFixer (Debug)" / "FFFModelFixer (Test)"; archives keep the plain name (`APP_NAME_KIND` from `DEPLOYMENT_LOCATION` in the project). The commit that added this was shared with other repos and mentions their release scripts; this repo has none.
 - Bundle id `com.kris.FFFModelFixer`, `DEVELOPMENT_TEAM` empty, Swift 5 language mode, version 1.0 (1).
-- Remote: `github.com/krisvandesande/FFFModelFixer`. Two commits so far.
+- Remote: `github.com/krisvandesande/FFFModelFixer`, public since 2026-11-21 (MIT, KVdS media bv). README.md is the public description; keep it in step with the app.
